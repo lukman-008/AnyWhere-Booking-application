@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>airbnb</title>
+</head>
+<body>
+    <h3>all listing</h3>
+    <ul>
+        <% let i =1 %>
+  <%  for(let listing of allListings){ %>
+        <img style="height: 100px; width: 100px;" src="<%= listing.image %>" alt="">
+        <li><a href="/listing/<%= listing._id %>"><%= listing.title %></a></li>
+        
+ <% } %>   
+</ul>
+</body>
+</html>
+
